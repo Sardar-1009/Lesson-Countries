@@ -3,9 +3,11 @@ import {useEffect, useState} from 'react';
 import {IShortCountry} from './types.ts';
 import {BASE_URL} from './constants.ts';
 import CountriesList from './Components/CountysList/CountryList.tsx';
+import CountryInfo from './Components/CountryInfo/CountryInfo.tsx';
 
 function App() {
   const [countries, setCountries] = useState<IShortCountry[]>([]);
+  const [selectedCountry, setSelectedCountry]= useState('')
 
   useEffect(() => {
     const getCountries = async () => {
@@ -26,7 +28,8 @@ function App() {
 
   return (
     <div>
-      <CountriesList countries={countries}/>
+      <CountriesList countries={countries} onSelectedCountry={setSelectedCountry}/>
+      <CountryInfo shortName={selectedCountry}/>
     </div>
   );
 }
