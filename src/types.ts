@@ -6,14 +6,21 @@ export interface IShortCountry {
 }
 
 export interface IFullCountry {
-    name:string
-    region:string
-    population:number
-    borders:string
-    flags:{
-        svg:string 
-    }
-}
+    name: {
+      common: string;
+      official: string;
+    };
+    capital?: string | string[];
+    population: number;
+    region: string;
+    flags: {
+      png: string;
+    };
+  }
+  
+
+  
+  
 
 
 export interface IFullCountryUpdated extends IFullCountry{

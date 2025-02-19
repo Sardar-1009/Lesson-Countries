@@ -1,0 +1,35 @@
+.country-info {
+    background-color: white; /* Set background color to white */
+    color: black; /* Set text color to black */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    max-width: 400px; /* Limit the width */
+    margin: 20px auto; /* Center the component */
+    font-family: Arial, sans-serif; /* Set font family */
+  }
+  
+  .error-message {
+    color: red; /* Keep error message red */
+  }
+  
+  .country-details {
+    text-align: left; /* Align text to the left */
+  }
+  
+  .country-name {
+    font-size: 1.5em; /* Increase font size for the country name */
+    margin-bottom: 10px;
+  }
+  
+  .country-capital,
+  .country-population,
+  .country-region {
+    margin: 5px 0; /* Add spacing between paragraphs */
+  }
+  
+  .country-flag {
+    width: 150px; /* Keep the flag width */
+    border-radius: 5px; /* Slightly round the corners of the flag */
+  }
+  
